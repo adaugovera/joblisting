@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+.icon{
+    width: 30%;
+    border-radius: 20%;
+    font-size: 40px;
+    color: black;
+    
+}
+.card{
+    border-radius: 7px;
+    background-color: rgb(204, 224, 217);
+}
+.nav_bar {}
+
+.navlinks li {
+    list-style: none;
+}
+.profiles{
+    margin-top: 30px;
+}
+.profiles img { 
+    
+    /* padding: 20px; */
+    /* background-color: white; */
+    border-radius: 70%;
+    width: 50px;
+    height: 50px;
+}
+
+.content1 {
+   
+}
+.overlay{
+    margin-left: -20px;
+    z-index: 1;
+}
+
+.navlinks a {
+    color: white;
+    padding-inline: 10px;
+    text-decoration: none;
+}
+/* .btn2{
+background-color: green;
+color: white;
+} */
+/* .btn1,
+.btn2 {
+    border-radius: 7px;
+} */
+
