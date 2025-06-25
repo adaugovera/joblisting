@@ -4,80 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> bootstrap Document</title>
-    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-</head>
-<style>
-    .item {
-        width: 300px;
-    }
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/joblist.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    .container:hover {
-        transition: all 1s ease-in-out;
-        transform: scaleY(-5px);
-    }
-</style>
+</head>
 
 <body>
-    <h1 class="text-info text-center ">welcome to bootstrap class</h1>
-    <div class="container  p-3  text-center bg-dark rounded shadow py-9 mb-4 text-info">
-        <h3>learning never ends</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima explicabo cumque, molestiae quis ipsum
-            reprehenderit velit laborum, sunt aspernatur omnis placeat autem veniam dicta nesciunt sequi similique quasi
-            iste porro!</p>
-    </div>
-    <div class="container-fluid  py-4">
-        <h1 class="text-capitalize text-center">come and buy from our store oasis</h1>
-        <div class="container-fluid d-flex justify-content-center flex-wrap gap-3  text-center">
-            <div class="item shadow rounded">
-                <img src="./images/WhatsApp Image 2025-06-16 at 3.28.31 AM.jpeg" class="img-fluid" alt="">
-                <h3>portait</h3>
-                <button class="btn btn-outline-success mb-4 w-50"> buy</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="#">JobListing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">How it Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Find Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">For Employers</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-outline-success">Log In</a>
+                    <a href="#" class="btn btn-success">Sign Up</a>
+                </div>
             </div>
-            <div class="item shadow rounded">
-                <img src="./images/WhatsApp Image 2025-06-16 at 3.28.32 AM (1).jpeg" class="img-fluid" alt="">
-                <h3>high standard</h3>
-                <button class="btn btn-outline-danger mb-4 w-50"> buy</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <!-- Left Content -->
+                <div class="col-md-6">
+                    <h1 class="hero-title">Find the perfect job for your skills</h1>
+                    <p class="hero-subtitle">Connect with top employers and get hired for remote, contract, or full-time
+                        positions</p>
+                    <div class="input-group search-box mb-3">
+                        <input type="text" class="form-control"
+                            placeholder="Search for jobs (e.g. Web Developer, Design)" />
+                        <button class="btn btn-success">Search</button>
+                    </div>
+                    <div class="popular-tags">
+                        <span>Popular:</span>
+                        <a href="#">Web Development</a>
+                        <a href="#">Design</a>
+                        <a href="#">Marketing</a>
+                        <a href="#">Data Science</a>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-md-6 text-center">
+                    <img src="../images/undraw_career-progress_vfq5.svg" alt="Hero Image" class="hero-image" />
+                </div>
             </div>
-            <div class="item shadow rounded">
-                <img src="./images/WhatsApp Image 2025-06-16 at 3.28.32 AM.jpeg" class="img-fluid" alt="">
-                <h3>pure quality</h3>
-                <button class="btn btn-outline-secondary mb-4 w-50"> buy</button>
-            </div>
+        </div>
+    </section>
+    <div class="container text-center py-5">
+        <h2 class="mb-3">how joblisting works</h2>
+        <div class="row " id="flexContainer">
+            <!-- Cards will be added dynamically with JavaScript -->
         </div>
     </div>
-    <section class="container mb-4 d-flex justify-content-center flex-wrap ">
-        <div
-            class=" text-center col-12 col-md-6 text-center  d-flex flex-column justify-content-center align-items-center ">
-            <h2>welcome to my store</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus eligendi recusandae aliquid
-                praesentium ipsam impedit, voluptatem quae eum quibusdam alias nesciunt ratione officiis ab harum
-                dignissimos voluptatibus magnam provident?</p>
-            <button class="btn btn-outline-success mb-4 ">Read more</button>
+    <div class="container text-center py-5">
+        <h2 class="mb-3">Explore job opportunities</h2>
+        <div class="row" id="cardContainer">
+            <!-- Cards will be added dynamically with JavaScript -->
         </div>
-        <div class=" col-12 col-md-4">
-            <img src="./images/WhatsApp Image 2025-06-16 at 3.28.31 AM.jpeg" alt="" class="img-fluid">
+    </div>
+
+    <!-- For Employers Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-md-6">
+                    <h4 class="fw-bold mb-3">For Employers</h4>
+                    <p class="mb-4">Find the perfect talent for your projects and positions</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">&#9989;<i class="bi bi-check-circle-fill text-success me-2"></i>Access a global
+                            pool
+                            of skilled professionals</li>
+                        <li class="mb-2">&#9989;<i class="bi bi-check-circle-fill text-success me-2"> </i>Post jobs and
+                            receive
+                            applications quickly</li>
+                        <li class="mb-2">&#9989;<i class="bi bi-check-circle-fill text-success me-2"></i>Review detailed
+                            profiles and portfolios</li>
+                        <li class="mb-2">&#9989;<i class="bi bi-check-circle-fill text-success me-2"></i>Hire with
+                            confidence
+                            using our platform tools</li>
+                    </ul>
+                    <a href="#" class="btn btn-success mt-3">Post a Job</a>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-md-6 text-center">
+                    <img src="../images/undraw_feeling-proud_tdos.svg" alt="For Employers" class="img-fluid" />
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- Swiper -->
+    <h2 class="text-center">what people say about us</h2>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide px-4">Slide 1
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, corrupti."
+                <div class="profile"><img src="../images/woman.jfif" alt="" width="50">
+                    <span><b>adaugo uchegbu</b> <br> web developer</span>
+                </div>
+                </p>
+            </div>
+            <div class="swiper-slide px-4">Slide 1
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, corrupti."
+                <div class="profile"><img src="../images/download.jfif" alt="" width="50">
+                    <span><b>adaugo uchegbu</b> <br> web developer</span>
+                </div>
+                </p>
+            </div>
+            <div class="swiper-slide px-4">Slide 1
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, corrupti."
+                <div class="profile"><img src="../images/girl.jfif" alt="" width="50">
+                    <span><b>adaugo uchegbu</b> <br> web developer</span>
+                </div>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- If you want navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- If you want pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <section class="section5 justify-content-center ">
+        <h4>READY TO FIND YOUR NEXT OPPORTUNITY?</h4> <br><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium eius quisquam eligendi, quasi ratione
+            deserunt!</p>
+        <br><br>
+        <button class="btn3">
+            create account
+        </button>
+        <button class="btn4 mt-3">browse jobs</button>
+    </section>
+    <section class=" row section6 ">
+        <div class="flexbox  ">
+            <div class="one">
+                <p><b>JOBLISTING</b></p>
+                <p>connecting talents with opportunities</p> <br>
+                <div class="icon">
+                    <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span><ion-icon name="logo-twitter"></ion-icon></span>
+                    <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                    <span><ion-icon name="logo-instagram"></ion-icon></span>
+                </div>
+            </div>
+            <div class="two">
+                <p><b>FOR JOB SEEKERS</b></p>
+                <ul class="list">
+                    <li>browse jobs</li>
+                    <li>browse jobs</li>
+                    <li>browse jobs</li>
+                    <li>browse jobs</li>
+                </ul>
+            </div>
+            <div class="three">
+                <p><b>FOR JOB SEEKERS</b></p>
+                <ul class="list">
+                    <li>browse jobs</li>
+                    <li>browse jobs</li>
+                    <li>browse jobs</li>
+                    <li>browse jobs</li>
+                </ul>
+            </div>
+        </div> <br><br>
+        <div class="underline"></div> <br><br>
+        <p style="text-align: center;">2025 joblisting.all rights reserved.</p>
     </section>
 
 
-    <div class="container my-5 p-4">
-        <div class="row h-50 gap-4 justify-content-center ">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-            <div class="col-md-4 border d-flex align-items-center justify-content-center gap-3">
-                <p>Lorem ipsum dolor sit.</p>
-                <img src="./images/WhatsApp Image 2025-06-16 at 3.28.31 AM.jpeg" alt="" width="200" class="img-thumbnail">
-            </div>
-    
-            <div class="col-md-2 d-none d-md-block h-50 border align-self-center ">
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            
-            <div class="col-md-4 border">
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-        </div>
-    </div>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="../js/joblist.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 
 </html>

@@ -1,0 +1,211 @@
+ body {
+      background-color: #f8f9fa;
+      
+    }
+.navigation{
+  width: 100%;
+  z-index: 1;
+      background-color: #f8f9fa;
+  position: fixed;
+  /* border: thin solid #198754; */
+}
+    .navbar-brand span {
+      color: green;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 80px 0;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #198754;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #6c757d;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .search-box input {
+      border-radius: 0.375rem 0 0 0.375rem;
+    }
+
+    .search-box button {
+      border-radius: 0 0.375rem 0.375rem 0;
+    }
+
+    .popular-tags a {
+      margin-right: 15px;
+      color: #198754;
+      text-decoration: none;
+    }
+
+    .popular-tags a:hover {
+      text-decoration: underline;
+    }
+
+    .hero-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .auth-buttons .btn {
+      margin-left: 10px;
+    }
+    .cardcontainer{
+      display: flex;
+     flex-wrap: wrap;
+      /* flex-direction: column; */
+      justify-content: center;
+      gap: 2rem;
+     
+    
+    }
+    .card{
+       flex-wrap: wrap;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      justify-content: center;
+      padding: 20px;
+      font-size: 25px;
+     border-radius: 6px;
+      text-align: center;
+    }
+
+    .card img{
+      width: 80px;
+    }
+
+    .box{
+      padding: 20px;
+      box-shadow: 0 0 10px #6c757d;
+      border-radius: 6px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease-in;
+  
+    }
+    .box:hover{
+      transform: translateY(-4px); 
+      box-shadow: 0 0 20px #6c757d;
+    }
+    .section5{
+    justify-content: center;
+    padding: 50px;
+    background-image: linear-gradient(
+        to right,
+        rgb(9, 41, 1),
+        green,
+        rgb(24, 36, 1)
+    );
+    text-align: center;
+    color: white;
+}
+.section5 h4{
+    font-size: 30px;
+    font-weight: 100;
+}
+.btn3{
+    padding: 10px 50px;
+    background-color: white;
+    color: green;
+    border-radius: 5px;
+}
+.btn4{
+    background-color: transparent;
+    margin-left: 10px;
+    border: thin solid white;
+    border-radius: 5px;
+    padding: 10px 50px;
+    color: white;
+}
+/* .swiper {
+  width: 600px;
+  height: 300px;
+} */
+   h2{
+    font-size: 50px;
+    font-weight: 150;
+   }
+    .swiper {
+      font-size: 20px;
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      margin: 40px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+.profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+.profile{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.item img{
+  justify-content: center;
+}
+    .swiper-slide {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      place-content: center;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: #100101;
+      /* background: #007bff; */
+    }
+
+.section6{
+    margin: auto;
+    font-size: 20px;
+    padding: 50px;
+    background-color: rgb(1, 1, 39);
+    color: white;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+
+.section6 .flexbox{
+  flex-wrap: wrap;
+    display: flex;
+    gap: 4rem;
+}
+#flexContainer{
+  gap: 5px;
+  text-wrap: wrap;
+}
+.list {
+    padding: 13px 0 ;
+    list-style: none;
+}
+.number{
+    display: block;
+    width: 40px;
+    place-content: center;
+    padding: 10px;
+    background-color: green;
+    color: white;
+
+    margin: auto;
+    /* font-weight: large; */
+    border-radius: 55%;
+}
+.underline{
+    margin: auto;
+    border-bottom: thin solid white;
+    width: 70%;
+}
